@@ -9,3 +9,11 @@ Unicode -> encode -> Binary
 Binary -> decode -> Unicode
 
 '''
+
+
+def to_str(bytes_or_str):
+    if isinstance(bytes_or_str):
+        value = bytes_or_str.decode('utf-8')
+    else:
+        value = bytes_or_str
+    return value
